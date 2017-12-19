@@ -1,0 +1,169 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 0 10px;
+  background: #333333;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+}
+
+/* section for tools */
+section {
+  width: 8%;
+  min-width: 78px;
+  height: 100%;
+  float: left;
+  background: lightgray;
+  -moz-box-shadow: 5px 5px #888888;
+  -webkit-box-shadow: 5px 5px #888888;
+  box-shadow: 5px 5px #888888;
+}
+
+/* nav */
+#tools {
+  width: calc(100% - 20px);
+  float: left;
+  padding: 0 10px;
+  cursor: auto;
+}
+
+/* drawing tools */
+#drawingIcons {
+  width: 100%;
+}
+
+#drawingIcons div,
+#iconSave,
+#iconDelete
+{
+  width: 20px;
+  height: 20px;
+  margin: 30px auto;
+}
+
+#iconPencil {
+  background: no-repeat center/100% url("../../images/pencil.png");
+}
+
+#iconPencil:hover,
+#iconPencil:focus,
+#iconPencil.selected {
+  background-image: url("../../images/pencil-white.png");;
+}
+
+#iconEraser {
+  background: no-repeat center/100% url("../../images/eraser.png");
+}
+
+#iconEraser:hover,
+#iconEraser:focus,
+#iconEraser.selected {
+  background-image: url("../../images/eraser-white.png");;
+}
+
+#iconDelete {
+  background: no-repeat center/100% url("../../images/bin.png");
+}
+
+#iconDelete:hover,
+#iconDelete:focus {
+  background-image: url("../../images/bin-white.png");;
+}
+
+/* color picker */
+#colorPickerForm p {
+  margin: 0;
+}
+
+#colorPicker {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+hr {
+  border-bottom-style: ridge;
+}
+
+/* width + height */
+input[type=number] {
+    width: 50%;
+    border: 0;
+    margin: 3px;
+    padding: 3px;
+}
+
+#sizePicker {
+  padding-top: 15px;
+}
+
+/* save */
+#iconSave {
+  background: no-repeat center/100% url("../../images/save.png");
+}
+
+#iconSave:hover,
+#iconSave:focus {
+  background-image: url("../../images/save-white.png");;
+}
+
+/* submit */
+#iconSubmit {
+  width: 20px;
+  height: 20px;
+  margin: 5px auto 25px auto;
+  background: no-repeat center/100% url("../../images/submit.png");
+}
+
+#iconSubmit:hover,
+#iconSubmit:focus {
+  background-image: url("../../images/submit-white.png");;
+}
+
+em {
+  font-size: 7px;
+}
+
+/* main */
+main {
+  width: 92%;
+  height: auto;
+  float: left;
+}
+
+@media only screen and (max-width: 995px) {
+  main {
+    width: calc(100% - 78px);
+  }
+}
+
+table,
+tr,
+td {
+    border: 1px solid #333333;
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 5%;
+}
+
+tr {
+    height: 20px;
+    min-height: 10px;
+}
+
+td {
+    width: 20px;
+    min-width: 10px;
+}
